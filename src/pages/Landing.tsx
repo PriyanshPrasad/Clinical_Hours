@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Check, ClipboardList, HeartPulse, Layers3, Sparkles, Timer, UserRound } from "lucide-react";
+import { ClinicalHoursLogo } from "@/components/ClinicalHoursLogo";
 import { useNavigate } from "react-router";
 
 const features = [
@@ -15,8 +16,7 @@ export default function Landing() {
     <div className="min-h-screen overflow-hidden bg-[#edf8f7] text-[#18364a]">
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
         <button onClick={() => navigate("/")} className="flex items-center gap-3 text-left">
-          <span className="flex size-11 items-center justify-center rounded-2xl bg-[#2f7da7] text-white clay-button"><HeartPulse className="size-6" /></span>
-          <span><strong className="block text-lg tracking-tight">Clinical Hours</strong><small className="text-xs text-[#5d8190]">Your healthcare journey, organized.</small></span>
+          <ClinicalHoursLogo />
         </button>
         <div className="flex items-center gap-3"><button onClick={() => navigate("/auth")} className="hidden rounded-xl px-4 py-2 text-sm font-semibold text-[#2f6178] sm:block">Sign in</button><button onClick={() => navigate("/auth?mode=signup")} className="clay-button rounded-xl bg-[#2f7da7] px-5 py-3 text-sm font-bold text-white">Get started <ArrowRight className="ml-1 inline size-4" /></button></div>
       </header>
