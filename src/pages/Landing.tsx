@@ -22,6 +22,7 @@ export default function Landing() {
       </header>
 
       <main>
+        <section className="mx-auto max-w-7xl px-6 pt-3 lg:px-10"><div className="rounded-[1.8rem] bg-[#d3eee8] px-6 py-6 text-[#32776f] clay-soft sm:px-10 sm:py-8"><p className="text-xl font-black tracking-tight sm:text-2xl">Your data stays in this browser.</p><p className="mt-2 max-w-3xl text-base leading-7 sm:text-lg">Avoid sensitive patient details. If your browser data is cleared, your ClinicalHours experiences, hours, reflections, and other saved information will also be deleted.</p><p className="mt-4 rounded-xl bg-white/55 px-4 py-3 text-sm font-bold leading-6 text-[#3f716f] sm:text-base"><strong>Recommended:</strong> export a backup of your ClinicalHours data regularly from Settings so you have a copy before clearing browser data or changing devices.</p></div></section>
         <section className="mx-auto grid max-w-7xl items-center gap-14 px-6 pb-24 pt-12 lg:grid-cols-[1.02fr_.98fr] lg:px-10 lg:pt-20">
           <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="max-w-xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#d7efea] px-4 py-2 text-xs font-bold text-[#28756e] clay-soft"><span className="size-2 rounded-full bg-[#55ad91]" /> Made for the next generation of healthcare leaders</div>
