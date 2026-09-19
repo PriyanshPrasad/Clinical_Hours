@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 
 const features = [
   { icon: ClipboardList, title: "Experience tracking", text: "Keep every clinic, shadowing, research, and service experience in one calm home." },
-  { icon: Timer, title: "Hour tracking", text: "Log sessions in minutes and let ClinicalHours calculate totals accurately." },
+  { icon: Timer, title: "Hour tracking", text: "Log sessions in minutes and let Clinical Hours calculate totals accurately." },
   { icon: Sparkles, title: "Reflection journal", text: "Capture what you noticed, learned, and how each experience shaped you." },
   { icon: Layers3, title: "Professional summary", text: "Turn your real experience into an application-ready snapshot whenever you need it." },
 ];
@@ -16,7 +16,7 @@ export default function Landing() {
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
         <button onClick={() => navigate("/")} className="flex items-center gap-3 text-left">
           <span className="flex size-11 items-center justify-center rounded-2xl bg-[#2f7da7] text-white clay-button"><HeartPulse className="size-6" /></span>
-          <span><strong className="block text-lg tracking-tight">ClinicalHours</strong><small className="text-xs text-[#5d8190]">Your healthcare journey, organized.</small></span>
+          <span><strong className="block text-lg tracking-tight">Clinical Hours</strong><small className="text-xs text-[#5d8190]">Your healthcare journey, organized.</small></span>
         </button>
         <div className="flex items-center gap-3"><button onClick={() => navigate("/auth")} className="hidden rounded-xl px-4 py-2 text-sm font-semibold text-[#2f6178] sm:block">Sign in</button><button onClick={() => navigate("/auth?mode=signup")} className="clay-button rounded-xl bg-[#2f7da7] px-5 py-3 text-sm font-bold text-white">Get started <ArrowRight className="ml-1 inline size-4" /></button></div>
       </header>
@@ -36,10 +36,10 @@ export default function Landing() {
           </motion.div>
         </section>
 
-        <section className="border-y border-[#dbecea] bg-white/45 px-6 py-20 lg:px-10"><div className="mx-auto max-w-7xl"><div className="max-w-xl"><p className="text-sm font-black uppercase tracking-[.18em] text-[#4ca88b]">One organized home</p><h2 className="mt-3 text-4xl font-black tracking-[-.04em] text-[#183d52]">Your best experiences deserve better than scattered notes.</h2><p className="mt-4 leading-7 text-[#688794]">Spreadsheets, notes apps, paper forms, random documents — ClinicalHours turns the mess into a clear, living record of the work you’re proud of.</p></div><div id="features" className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{features.map(({ icon: Icon, title, text }, index) => <div key={title} className="rounded-[1.6rem] bg-[#f4fbfa] p-6 clay-soft"><div className={`mb-5 flex size-12 items-center justify-center rounded-2xl ${index % 2 ? "bg-[#f8dcae] text-[#946f3f]" : "bg-[#d1ece5] text-[#368979]"}`}><Icon className="size-5" /></div><h3 className="font-black text-[#24495c]">{title}</h3><p className="mt-2 text-sm leading-6 text-[#78919b]">{text}</p></div>)}</div></div></section>
+        <section className="border-y border-[#dbecea] bg-white/45 px-6 py-20 lg:px-10"><div className="mx-auto max-w-7xl"><div className="max-w-xl"><p className="text-sm font-black uppercase tracking-[.18em] text-[#4ca88b]">One organized home</p><h2 className="mt-3 text-4xl font-black tracking-[-.04em] text-[#183d52]">Your best experiences deserve better than scattered notes.</h2><p className="mt-4 leading-7 text-[#688794]">Spreadsheets, notes apps, paper forms, random documents — Clinical Hours turns the mess into a clear, living record of the work you’re proud of.</p></div><div id="features" className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{features.map(({ icon: Icon, title, text }, index) => <div key={title} className="rounded-[1.6rem] bg-[#f4fbfa] p-6 clay-soft"><div className={`mb-5 flex size-12 items-center justify-center rounded-2xl ${index % 2 ? "bg-[#f8dcae] text-[#946f3f]" : "bg-[#d1ece5] text-[#368979]"}`}><Icon className="size-5" /></div><h3 className="font-black text-[#24495c]">{title}</h3><p className="mt-2 text-sm leading-6 text-[#78919b]">{text}</p></div>)}</div></div></section>
         <section className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-6 py-20 sm:flex-row sm:items-center lg:px-10"><div><p className="text-sm font-bold text-[#4ca88b]">Your data stays in your browser.</p><h2 className="mt-2 text-3xl font-black tracking-tight">Start building your story today.</h2><p className="mt-2 text-[#6b8793]">Free, private, and designed for the way students actually work.</p></div><button onClick={() => navigate("/auth?mode=signup")} className="clay-button shrink-0 rounded-2xl bg-[#2f7da7] px-7 py-4 font-bold text-white">Create my workspace <ArrowRight className="ml-2 inline size-4" /></button></section>
       </main>
-      <footer className="border-t border-[#dbecea] px-6 py-6 text-center text-xs text-[#78919b]">ClinicalHours · Track your experience. Build your future. · Local-first demo</footer>
+      <footer className="border-t border-[#dbecea] px-6 py-6 text-center text-xs text-[#78919b]">Clinical Hours · Track your experience. Build your future. · Local-first demo</footer>
     </div>
   );
 }
