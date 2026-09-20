@@ -1,0 +1,17 @@
+{
+  "name": "Clinical Hours",
+  "short_name": "Clinical Hours",
+  "description": "Organize healthcare experiences, hours, reflections, and progress.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#edf8f7",
+  "theme_color": "#2f7da7",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
